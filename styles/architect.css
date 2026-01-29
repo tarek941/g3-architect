@@ -126,6 +126,44 @@ main{
     margin-bottom: 32px;
 }
 
+.feature2, .dscp{
+    max-width: 540px;
+}
+
+.fact-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 124px;
+}
+
+.card-holder{
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    width: 241px;
+    height: 241px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    text-align: center;
+}
+
+.card h3{
+    margin-top: 10px;
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.card h5{
+    margin-top: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #727272;
+}
+
 @media screen and (max-width: 576px) {
     .navbar,
     .teams,
@@ -139,6 +177,12 @@ main{
 
     .features{
         margin-left: 30px;
+    }
+
+    .fact-cards{
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        gap: 50px;
     }
 }
 
